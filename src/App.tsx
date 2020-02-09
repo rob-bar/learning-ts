@@ -1,13 +1,19 @@
-import React from "react";
-import { Head } from "./Head";
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react'
+import { Head } from './components/Head'
+import Button from './components/Button'
+import logo from './logo.svg'
+import './App.css'
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Head title="Hello" isActive={true} />
+        <Head title="Hello" isActive={false} />
+        <Button
+          onClick={value => {
+            console.log(value)
+          }}
+        ></Button>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -22,7 +28,7 @@ const App = () => {
         </a>
       </header>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
