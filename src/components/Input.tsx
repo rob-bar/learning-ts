@@ -14,11 +14,11 @@ export const Input = () => {
   // const ref = useRef<HTMLInputElement | null>(null) // this value is also writable
 
   // this ref is read only
-  const ref = useRef<HTMLInputElement>(null!)
+  const ref = useRef<HTMLInputElement>(null)
 
-  ref.current &&
-    ref.current.value &&
-    console.log('TCL: Input -> ref', ref.current.value)
+  console.log('TCL: Input -> ref', ref?.current?.value) // Optional chaining also in typescript ;)
+  // ?. returns falsy or truthy
+
   return (
     <input ref={ref} value={name} onChange={e => setName(e.target.value)} />
   )
