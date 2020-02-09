@@ -10,8 +10,9 @@ const App = () => {
       <header className="App-header">
         <Head title="Hello" isActive={false} />
         <Button
-          onClick={value => {
-            console.log(value)
+          onClick={e => {
+            e.preventDefault()
+            console.log(e)
           }}
         ></Button>
         <img src={logo} className="App-logo" alt="logo" />
