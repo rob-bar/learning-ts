@@ -14,7 +14,9 @@ const App = () => {
             e.preventDefault()
             console.log(e)
           }}
-        ></Button>
+        >
+          this is a <i>button</i>
+        </Button>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
