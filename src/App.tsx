@@ -2,6 +2,7 @@ import React from 'react'
 import { Head } from './components/Head'
 import Button from './components/Button'
 import { Input } from './components/Input'
+import ReducerButtons from './components/ReducerButtons'
 import logo from './logo.svg'
 import './App.css'
 
@@ -19,6 +20,7 @@ const App = () => {
           this is a <i>button</i>
         </Button>
         <Input></Input>
+        <ReducerButtons></ReducerButtons>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
