@@ -4,6 +4,7 @@ import Button from './components/Button'
 import { Input } from './components/Input'
 import { GlobalProvider } from './components/GlobalState'
 import ReducerButtons from './components/ReducerButtons'
+import BigC from './components/BigC'
 import logo from './logo.svg'
 import './App.css'
 
@@ -13,6 +14,7 @@ const App = () => {
       <div className="App">
         <header className="App-header">
           <Head title="Hello" isActive={false} />
+          <BigC title="YO YO YO" />
           <Button
             onClick={(e) => {
               e.preventDefault()
